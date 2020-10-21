@@ -1,0 +1,10 @@
+[1018/141127.001:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)
+[1018/231434.725:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\mateu\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\2c914318-5cd7-4433-831b-57f90936986b: O sistema não pode encontrar o caminho especificado. (0x3)
+[1019/003633.134:ERROR:process_reader_win.cc(123)] NtOpenThread: {Acesso Negado} Um processo solicitou acesso a um objeto, mas o direito de acesso não lhe foi concedido. (0xc0000022)
+[1019/003633.134:ERROR:process_reader_win.cc(123)] NtOpenThread: {Acesso Negado} Um processo solicitou acesso a um objeto, mas o direito de acesso não lhe foi concedido. (0xc0000022)
+[1019/003633.650:ERROR:exception_snapshot_win.cc(99)] thread ID 1096 not found in process
+[1019/003633.650:ERROR:exception_snapshot_win.cc(99)] thread ID 10656 not found in process
+[1019/003633.884:ERROR:process_reader_win.cc(123)] NtOpenThread: {Acesso Negado} Um processo solicitou acesso a um objeto, mas o direito de acesso não lhe foi concedido. (0xc0000022)
+[1019/003633.884:ERROR:exception_snapshot_win.cc(99)] thread ID 15648 not found in process
+[1019/003633.962:ERROR:process_reader_win.cc(123)] NtOpenThread: {Acesso Negado} Um processo solicitou acesso a um objeto, mas o direito de acesso não lhe foi concedido. (0xc0000022)
+[1019/003633.962:ERROR:exception_snapshot_win.cc(99)] thread ID 17420 not found in process

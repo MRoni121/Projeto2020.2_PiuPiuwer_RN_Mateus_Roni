@@ -1,21 +1,34 @@
+import { NavigationContainer } from '@react-navigation/native';
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { AuthProvider } from './src/hooks/useAuth';
+import { PiusProvider } from './src/hooks/usePius';
+import { Bitter_400Regular, Bitter_700Bold, useFonts } from '@expo-google-fonts/bitter';
+
+import {AppLoading} from 'expo';
+
+import Routes from './src/routes';
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+
+  let[fontsLoaded] = useFonts({
+    Bitter_400Regular,
+    Bitter_700Bold
+  });
+
+  if(!fontsLoaded) {
+    return <AppLoading/>
+  }
+
+  else{
+    return (
+      <PiusProvider>
+        <AuthProvider>
+          <Routes/> 
+          <StatusBar style="light" />
+        </AuthProvider>
+      </PiusProvider>
+    );
+  }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
